@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
+﻿
 namespace Lab1
 {
      public static class Lab1Code
@@ -37,7 +36,7 @@ namespace Lab1
             }
         }
 
-        static int MaxHoles(int N, int M, int[][] holes1, int[][] holes2)
+        static int MaxHoles(int[][] holes1, int[][] holes2)
         {
             int maxHolesCount = 0;
 
@@ -67,7 +66,7 @@ namespace Lab1
             string outputFilename = @"C:\\Users\\Admin\\source\\repos\\CrossLabs\\Lab1\\Lab1\\Output.txt";
 
             var input = ReadInput(inputFilename);
-            int result = MaxHoles(input.Item1, input.Item2, input.Item3, input.Item4);
+            int result = MaxHoles(input.Item3, input.Item4);
             WriteOutput(outputFilename, result);
         }
     }
